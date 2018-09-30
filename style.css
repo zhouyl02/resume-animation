@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* 让 wrapper 里的元素 flex 布局 */
+.wrapper {
+  min-width: 1100px;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+#options {
+  width: 100%;
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+}
+#options #code_body {
+  height: 100%;
+}
+.downloadResume {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #CFD8DC;
+  text-align: center;
+  line-height: 58px;
+  margin-top: 14px;
+  border-radius: 5px;
+  border: 1px solid #CFD8DC;
+  transition: all 0.2s;
+}
+.downloadResume:hover {
+  box-shadow: 0 1px 6px 1px #cfdbdcbb;
+}
+
+.token.comment, .token.punctuation, .token.property, .token.selector {
+  color: black;
+}
+
+code {
+  padding: 2px 4px;
+  margin-right: 4px;
+  border-radius: 4px;
+  color: #455A64;
+  background-color: #455a6426;
+  height: 18px;
+  line-height: 18px;
+  font-size: 90%;
+  font-family: Consolas,monospace,serif;
+}
+
+@keyframes breathe
+{
+  0% { box-shadow: 0 0 1px 0px #CFD8DC; }
+  50% { box-shadow: 0 0 10px 4px #CFD8DC; }
+  100% { box-shadow: 0 0 1px 0px #CFD8DC; }
+}
